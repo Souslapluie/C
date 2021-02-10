@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int main() {
+
+char ette[] = "go muscu";
+int aigrer = 10;
+
+    printf("ca marche ou pas ?           ");              printf("T---------------T \n");         
+	printf("Je pense           ");                      printf("          | go go %s| \n", ette);
+    printf("que oui          ");                        printf("            |_______________| \n \n");             
+                                                         
+                            printf("%d %d %d \n \n", aigrer);        
+    
+int my_rand (void);
+
+            
+            static int first = 0;
+            
+            if (first == 0)
+            {
+                srand (time (NULL));
+                first = 1;
+            }
+
+   int i;
+
+ printf("   Nombres pseudoaléatoires : \n \n ");
+   for (i = 0; i<10; i++)
+   {
+     printf ("%d ", my_rand());
+   }
+   return (EXIT_SUCCESS);
+}
+
+int my_rand (void)
+{
+   return (rand ());
+} 
