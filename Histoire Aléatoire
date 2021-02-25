@@ -2,25 +2,29 @@
 #include <stdlib.h>
 #include <time.h>
 
+// Site pour listes chaînées = 
+// https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/19733-les-listes-chainees
 
 int main() {
 
-char Adjour[] = "cette époustouflante";
+      char Adjour[] = "cette époustouflante";
+      int Nbj = 24;
+      char Nmm[] = "Février";
+      int Nba = 2021;
+      char SNomP[] = "\"l'idiot suicidaire\"\n";
+      char But[] = "son obsession aveugle pour l'éradication des titans.";
+      char Perso[] = "d'un combattant";
 
-int Nbj = 24;
+printf("\nEn %s journée du %d %s %d, nous allâmes vous raconter l'histoire %s surnommé %sà cause de %s \n", Adjour, Nbj, Nmm, Nba, Perso , SNomP, But); 
 
-int Nbm = 02;
+      char EtatP[] = "enfant";
+      char Event[] = "n'ayant absolument rien changé à sa vie";
+      char Perip1[] = "Il a observé sa mère se faire dévorer vivante par un titan, alors que son père était porté disparu depuis peu";
+      char Perip2[] = "Il a go muscu + drague de rue";
 
-int Nba = 2021;
+printf("\nTout a commencé lorsqu'il était %s, et qu'il ait assisté à des événements %s : \n\n   - %s \n   - %s", EtatP, Event, Perip1, Perip2);
 
-char NomP[5];
-NomP[0] = "de l'enfant surnommé \"l'idiot suicidaire\" \nà cause de son obsession aveugle pour l'éradication des titans.";
-NomP[1] = 0;
-
-printf("\n En %s journée du %d/%d/%d, nous allâmes vous raconter l'histoire %s \n", Adjour, Nbj, Nbm, Nba, NomP); 
-
-
-printf("\n");
+printf("\n\n test");
 
 int my_rand (void);
 
